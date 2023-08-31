@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  @media (min-width: 1000px) {
+    color: red;
+  }
+  text-align: center;
+  font-size: 6em;
+  @media (max-width: 1000px) {
+    color: purple;
+  }
+}
+
+.column {
+  float: right;
+  padding: 10px;
+  @media (max-width: 800px) {
+    width: 100%;
+  }
+  @media (min-width: 800px) and (max-width: 1400px) {
+    width: 50%;
+  }
+  @media (min-width: 1400px) {
+    width: 25%;
+  }
+}
+
+
+// sass version
+// .column 
+//   float: right
+//   padding: 10px
+//   @media (max-width: 800px) 
+//      width: 100%;
+//   @media (min-width: 800px) and (max-width: 1400px) 
+//     width: 50%
+//   @media (min-width: 1400px) 
+//     width: 25%
+
+
+// @media (max-width: 1000px) {
+//   h1 {
+//     color: purple;
+//   }
+// }

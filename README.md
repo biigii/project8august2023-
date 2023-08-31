@@ -1,1 +1,7 @@
-https://codepen.io/behshad/pen/WNaZVVQ
+  "liveSassCompile.settings.formats": [
+    {
+      "extensionName": ".min.css",
+      "format": "compressed",
+      "savePath": "./assets/css"
+    }
+  ]
