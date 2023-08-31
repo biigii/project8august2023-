@@ -1,15 +1,79 @@
-// :root {
-//   --brand: #f99;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$brand: #fde;
+$brand-txt: #e44;
+
+h1 {
+  // color: $brand;
+  font-size: 5em;
+  // background-color: $brand-txt;
+  // text-align: center;
+  // text-transform: capitalize;
+  // text-decoration: underline;
+  text: {
+    align: center;
+    transform: capitalize;
+    decoration: underline;
+  }
+  margin: {
+    top: 50px;
+    bottom: 10px;
+  }
+
+  border: {
+    style: solid;
+    color: red;
+    width: 10px;
+  }
+}
+
+header {
+  height: 200px;
+  background-color: $brand;
+  nav.navigation {
+    text-align: center;
+    line-height: 200px;
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $brand-txt;
+      margin-left: 10px;
+      margin-right: 10px;
+      transition: {
+        property: color;
+        duration: 400ms
+      }
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+}
+
+
+
+// header {
+//   height: 200px;
+//   background-color: $brand;
 // }
 
-// this  comment will disappear
-/* but this comment should remain */
-h1 {
-  color: #f33;
-  font-size: 5em;
-  background-color: blue;
-} /*# sourceMappingURL=main.css.map */
+// nav.navigation {
+//   text-align: center;
+//   line-height: 200px;
+// }
 
-// p {
-//   color: var(--brand);
+// nav.navigation a {
+//   text-decoration: none;
+//   text-transform: uppercase;
+//   color: $brand-txt;
+//   margin-left: 10px;
+//   margin-right: 10px;
+// }
+
+// nav.navigation a:hover {
+//   color: #000;
 // }

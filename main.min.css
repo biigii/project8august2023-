@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 5em;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: underline;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-color: red;
+  border-width: 10px;
+}
+header {
+  height: 200px;
+  background-color: #fde;
+}
+header nav.navigation {
+  text-align: center;
+  line-height: 200px;
+}
+header nav.navigation a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #e44;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition-property: color;
+  transition-duration: 400ms;
+}
+header nav.navigation a:hover {
+  color: #000;
+} /*# sourceMappingURL=main.min.css.map */
