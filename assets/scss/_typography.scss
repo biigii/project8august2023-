@@ -1,0 +1,6 @@
+// @use "./variables" as anything;
+@use "./variables" as var;
+
+h1 {
+  color: var.$brand;
+}

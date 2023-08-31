@@ -1,0 +1,59 @@
+@use "./variables" as something-else;
+
+.navigation {
+  height: 200px;
+  background-color: something-else.$secondary-color;
+  text-align: center;
+  line-height: 200px;
+  a {
+    color: #fff;
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+body {
+  background-color: #000;
+}
+
+// .btn {
+//   width: 100px;
+//   height: 40px;
+//   border: {
+//     style: solid;
+//     width: 5px;
+//     color: #fff;
+//     radius: 5px;
+//   }
+// }
+
+// .btn-danger {
+//   background-color: red;
+// }
+// .btn-warning {
+//   background-color: orange;
+// }
+
+// @extend
+
+%button {
+  width: 100px;
+  height: 40px;
+  border: {
+    style: solid;
+    width: 5px;
+    color: #fff;
+    radius: 5px;
+  }
+}
+
+.btn-danger {
+  background-color: red;
+  @extend %button;
+}
+
+.btn-warning {
+  background-color: orange;
+  @extend %button;
+}
